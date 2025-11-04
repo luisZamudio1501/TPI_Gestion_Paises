@@ -1,4 +1,4 @@
-# TPI - Gestión de Paises
+# 🌎 TPI - Gestión de Paises
 
 **Tecnicatura Universitaria en Programación (UTN - A Distancia)**  
 **Materia:** Programación 1 – Segundo Cuatrimestre 2025  
@@ -8,7 +8,7 @@ Trabajo Práctico Integrador - Programación 1 - Bufe Yalila - Zamudio Luis
 
 ---
 
-## Objetivo del Proyecto
+## 🎯 Objetivo del Proyecto
 
 Desarrollar una aplicación de consola en **Python 3** que permita gestionar información de distintos países, aplicando los conceptos vistos en la materia: listas, diccionarios, funciones, condicionales, bucles, filtros, ordenamientos y estadísticas.
 
@@ -43,7 +43,7 @@ TPI_Gestion_Paises/
 
 ---
 
-## Requisitos
+## ⚙️ Requisitos
 
 - **Python 3.10** o superior  
 - No requiere librerías externas  
@@ -51,7 +51,7 @@ TPI_Gestion_Paises/
 
 ---
 
-## Ejecución
+## ▶️ Ejecución
 
 1. Clonar o descargar el repositorio:
    ```bash
@@ -61,7 +61,7 @@ TPI_Gestion_Paises/
 
 3. Ejecutar el programa: python main.py
 
-## Funcionalidades Principales
+## 🧠 Funcionalidades Principales
 
 OPCIÓN    DESCRIPCIÓN                                       
 1         Agregar un país                                   
@@ -75,7 +75,7 @@ OPCIÓN    DESCRIPCIÓN
 
 
 
-## Estadísticas
+## 📊 Estadísticas
 
 - País con mayor población
 
@@ -86,13 +86,13 @@ OPCIÓN    DESCRIPCIÓN
 - Cantidad de países por continente
 
 
-## Integrantes
+## 👥 Integrantes
 
 - Bufe Yalila Belen  -   Desarrollo y documentación  -   yalilabufe@gmail.com
 - Luis Zamudio	     -   Desarrollo y documentación	 -   luiszamudio150115@gmail.com
 
 
-## Documentación Complementaria
+## 🧾 Documentación Complementaria
 
 - Informe PDF - Marco teórico y conclusiones (SUBIR MARCO TEÓRICO)
 

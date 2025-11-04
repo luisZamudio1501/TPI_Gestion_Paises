@@ -1,4 +1,4 @@
-# 🌎 TPI - Gestión de Paises
+# 🌎 TPI - Gestión de Países
 
 **Tecnicatura Universitaria en Programación (UTN - A Distancia)**  
 **Materia:** Programación 1 – Segundo Cuatrimestre 2025  

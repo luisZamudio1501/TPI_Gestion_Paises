@@ -20,11 +20,9 @@ El programa debe:
 
 ---
 
-## Estructura del Proyecto
 ## 🧩 Estructura del Proyecto
 
-
-
+```
 TPI_Gestion_Paises/
 ├── src/
 │ ├── main.py # Programa principal y menú
@@ -41,23 +39,7 @@ TPI_Gestion_Paises/
 ├── .gitignore
 └── README.md
 
-
-TPI_Gestion_Paises/
-├── src/
-│   ├── main.py               # Programa principal y menú
-│   ├── persistencia.py       # Lectura/escritura CSV
-│   ├── validaciones.py       # Control de entradas y datos
-│   ├── consultas.py          # Búsquedas, filtros y ordenamientos
-│   ├── estadisticas.py       # Cálculos y promedios
-│   └── datos.csv             # Dataset base de países
-├── capturas/
-│   ├── ejemplo_menu.png
-│   ├── ejemplo_filtros.png
-│   └── ejemplo_estadisticas.png
-├── .gitattributes
-├── .gitignore
-└── README.md
-
+```
 
 ---
 

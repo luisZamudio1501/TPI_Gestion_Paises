@@ -1,4 +1,4 @@
-# TPI - GESTION DE PAISES
+# TPI - Gestión de Paises
 
 **Tecnicatura Universitaria en Programación (UTN - A Distancia)**  
 **Materia:** Programación 1 – Segundo Cuatrimestre 2025  
@@ -8,7 +8,7 @@ Trabajo Práctico Integrador - Programación 1 - Bufe Yalila - Zamudio Luis
 
 ---
 
-## OBJETIVO DEL PROYECTO
+## Objetivo del Proyecto
 
 Desarrollar una aplicación de consola en **Python 3** que permita gestionar información de distintos países, aplicando los conceptos vistos en la materia: listas, diccionarios, funciones, condicionales, bucles, filtros, ordenamientos y estadísticas.
 
@@ -20,7 +20,7 @@ El programa debe:
 
 ---
 
-## ESTRUCTURA DEL PROYECTO
+## Estructura del Proyecto
 
 TPI_Gestion_Paises/
 ├── src/
@@ -41,7 +41,7 @@ TPI_Gestion_Paises/
 
 ---
 
-## REQUISITOS
+## Requisitos
 
 - **Python 3.10** o superior  
 - No requiere librerías externas  
@@ -49,7 +49,7 @@ TPI_Gestion_Paises/
 
 ---
 
-## EJECUCIÓN
+## Ejecución
 
 1. Clonar o descargar el repositorio:
    ```bash
@@ -59,7 +59,7 @@ TPI_Gestion_Paises/
 
 3. Ejecutar el programa: python main.py
 
-## FUNCIONALIDADES PRINCIPALES
+## Funcionalidades Principales
 
 OPCIÓN    DESCRIPCIÓN                                       
 1         Agregar un país                                   
@@ -73,7 +73,7 @@ OPCIÓN    DESCRIPCIÓN
 
 
 
-## ESTADÍSTICAS
+## Estadísticas
 
 - País con mayor población
 
@@ -84,13 +84,13 @@ OPCIÓN    DESCRIPCIÓN
 - Cantidad de países por continente
 
 
-## INTEGRANTES 
+## Integrantes
 
 - Bufe Yalila Belen  -   Desarrollo y documentación  -   yalilabufe@gmail.com
 - Luis Zamudio	     -   Desarrollo y documentación	 -   luiszamudio150115@gmail.com
 
 
-## DOCUMENTACIÓN COMPLEMENTARIA
+## Documentación Complementaria
 
 - Informe PDF - Marco teórico y conclusiones (SUBIR MARCO TEÓRICO)
 

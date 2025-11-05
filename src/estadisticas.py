@@ -50,17 +50,4 @@ def promedio_superficie(paises):
         return 0.0
     total = 0
     for p in paises:
-        total += p["superficie"]
-    return total / len(paises)
-
-# Devuelve un diccionario {continente: cantidad_de_paises}
-def cantidad_por_continente(paises):
-
-    conteo = {}
-    for p in paises:
-        cont = p["continente"]
-        if cont in conteo:
-            conteo[cont] += 1
-        else:
-            conteo[cont] = 1
-    return conteo
+        total += p

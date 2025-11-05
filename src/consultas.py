@@ -29,4 +29,43 @@ def buscar_por_nombre(paises, texto_a_buscar, tipo_busqueda):
 # Esta función devuelve una lista con los países del continente indicado
 def filtrar_por_continente(paises, continente):
     resultados = []
-    cont = continente.strip().low
+    cont = continente.strip().lower()
+    for p in paises:
+        if p["continente"].lower() == cont:
+            resultados.append(p)
+    return resultados
+
+# Devuelve países con población entre mínimo y máximo ingresado
+def filtrar_por_rango_poblacion(paises, minimo=0, maximo=None):
+    resultados = []
+    for p in paises:
+        poblacion = p["poblacion"]
+        if maximo is None and poblacion >= minimo:
+            resultados.append(p)
+        elif maximo is not None and minimo <= poblacion <= maximo:
+            resultados.append(p)
+    return resultados
+
+# Devuelve países con superficie entre mínimo y máximo ingresado
+def filtrar_por_rango_superficie(paises, minimo=0, maximo=None):
+    resultados = []
+    for p in paises:
+        superficie = p["superficie"]
+        if maximo is None and superficie >= minimo:
+            resultados.append(p)
+        elif maximo is not None and minimo <= superficie <= maximo:
+            resultados.append(p)
+    return resultados
+
+# ORDENAMIENTO
+
+# Esta función ordena la lista de países por un campo específico (nombre, poblacion o superficie)
+# 
+def ordenar_paises(paises, por="nombre", descendente=False):
+    
+    if por not in ("nombre", "poblacion", "superficie"):
+        print("ERROR: campo de ordenamiento inválido")
+        return paises
+
+    lista_ordenada = sorted(paises, key=lambda p: p[por], reverse=descendente)
+    return lista_ordenada

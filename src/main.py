@@ -183,42 +183,6 @@ def opcion_filtrar_paises(paises):
             print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
 
-# OPCIÓN 4
-def opcion_filtrar_paises(paises):
-    
-    limpiar_pantalla()
-    print("\n— Filtrar —")
-    print("a) Por continente")
-    print("b) Por rango de población")
-    print("c) Por rango de superficie")
-    
-    sub = input("Elija opción (a/b/c): ").strip().lower()
-
-    if sub == "a":
-        cont = leer_texto_no_vacio("Continente: ")
-        res = filtrar_por_continente(paises, cont)
-    elif sub == "b":
-        minimo = leer_entero_no_negativo("Población mínima: ")
-        maximo = leer_entero_no_negativo("Población máxima (0 = sin tope): ")
-        maximo = None if maximo == 0 else maximo
-        res = filtrar_por_rango_poblacion(paises, minimo, maximo)
-    elif sub == "c":
-        minimo = leer_entero_no_negativo("Superficie mínima: ")
-        maximo = leer_entero_no_negativo("Superficie máxima (0 = sin tope): ")
-        maximo = None if maximo == 0 else maximo
-        res = filtrar_por_rango_superficie(paises, minimo, maximo)
-    else:
-        print("Opción inválida")
-        pausar()
-        return
-
-    if not res:
-        print("Sin resultados")
-    else:
-        for r in res:
-            print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
-    pausar()
-
 # OPCIÓN 5
 def opcion_ordenar_paises(paises):
     
@@ -238,54 +202,7 @@ def opcion_ordenar_paises(paises):
     for r in ordenados:
         print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
-
-# OPCIÓN 5
-def opcion_ordenar_paises(paises):
     
-    limpiar_pantalla()
-    print("\n— Ordenar —")
-    print("Campos disponibles: nombre / poblacion / superficie")
-    campo = leer_texto_no_vacio("Campo: ").lower()
-    sentido = leer_texto_no_vacio("Sentido (asc/desc): ").lower()
-    desc = (sentido == "desc")
-
-    if campo not in ("nombre", "poblacion", "superficie"):
-        print("ERROR: campo inválido")
-        pausar()
-        return
-
-    ordenados = ordenar_paises(paises, por=campo, descendente=desc)
-    for r in ordenados:
-        print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
-    pausar()
-
-# OPCION 6
-def opcion_estadisticas_paises(paises):
-    
-    limpiar_pantalla()
-    print("\n— Estadísticas —")
-    if not paises:
-        print("No hay países cargados")
-        pausar()
-        return
-
-
-    mayor = pais_mayor_poblacion(paises)
-    menor = pais_menor_poblacion(paises)
-    
-    print(f"Mayor población: {mayor.get('nombre','-')} ({mayor.get('poblacion','-')})")
-    print(f"Menor población: {menor.get('nombre','-')} ({menor.get('poblacion','-')})")
-    print(f"Promedio de población: {promedio_poblacion(paises):.2f}")
-    print(f"Promedio de superficie: {promedio_superficie(paises):.2f}")
-    
-    conteo = cantidad_por_continente(paises)
-    
-    print("Cantidad por continente:")
-    
-    for cont, cant in conteo.items():
-        print(f"  - {cont}: {cant}")
-    pausar()
-
 # OPCION 6
 def opcion_estadisticas_paises(paises):
     limpiar_pantalla()

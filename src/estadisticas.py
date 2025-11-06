@@ -43,6 +43,7 @@ def promedio_poblacion(paises):
         total += p.get("poblacion", 0)
     return total / len(paises)
 
+
 # Devuelve el promedio de superficie
 def promedio_superficie(paises):
 
@@ -62,4 +63,4 @@ def cantidad_por_continente(paises):
             conteo[c] += 1
         else:
             conteo[c] = 1
-    return conteo
+    return conteo 

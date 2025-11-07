@@ -61,6 +61,8 @@ TPI_Gestion_Paises/
 
 3. Ejecutar el programa: python main.py
 
+---
+
 ## 🧠 Funcionalidades Principales
 
 OPCIÓN    DESCRIPCIÓN                                       
@@ -73,7 +75,7 @@ OPCIÓN    DESCRIPCIÓN
 7     -    Guardar los cambios en el CSV                     
 8     -    Salir del programa     
 
-
+---
 
 ## 📊 Estadísticas
 
@@ -85,21 +87,28 @@ OPCIÓN    DESCRIPCIÓN
 
 - Cantidad de países por continente
 
+---
 
 ## 👥 Integrantes
 
 - Bufe Yalila Belen  -   Desarrollo y documentación  -   yalilabufe@gmail.com
 - Luis Zamudio	     -   Desarrollo y documentación	 -   luiszamudio150115@gmail.com
 
+---
 
 ## 🧾 Documentación Complementaria
 
 - Informe PDF - Marco teórico y conclusiones (SUBIR MARCO TEÓRICO)
 
 - Carpeta de capturas 
+
+- Video de presentación (SUBIR ACÁ EL VIDEO)
+
 ---
 
 ### 📸 Capturas de ejecución
+
+---
 
 A continuación se presentan algunas capturas del funcionamiento del programa en consola:
 
@@ -129,6 +138,8 @@ Ejemplo de filtrado por continente.
 
 ![Filtrado y ordenamiento](capturas/03_ejemplo_filtrar.png)
 
+---
+
 #### 🌎 Ordenamiento
 Ejemplo de filtrado por continente y ordenamiento por población.
 
@@ -141,5 +152,3 @@ Se muestran los resultados de promedio, país con mayor/menor población y canti
 
 ![Estadísticas](capturas/05_ejemplo_estadistica.png)
 
-
-- Video de presentación (SUBIR ACÁ EL VIDEO)

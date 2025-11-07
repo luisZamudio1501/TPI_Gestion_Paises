@@ -147,7 +147,6 @@ def opcion_buscar_paises(paises):
             print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
 
-
 # OPCIÓN 4
 def opcion_filtrar_paises(paises):
     
@@ -184,7 +183,6 @@ def opcion_filtrar_paises(paises):
             print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
 
-
 # OPCIÓN 5
 def opcion_ordenar_paises(paises):
     
@@ -204,11 +202,9 @@ def opcion_ordenar_paises(paises):
     for r in ordenados:
         print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
-
-
+    
 # OPCION 6
 def opcion_estadisticas_paises(paises):
-    
     limpiar_pantalla()
     print("\n— Estadísticas —")
     if not paises:
@@ -218,16 +214,14 @@ def opcion_estadisticas_paises(paises):
 
     mayor = pais_mayor_poblacion(paises)
     menor = pais_menor_poblacion(paises)
-    
+
     print(f"Mayor población: {mayor.get('nombre','-')} ({mayor.get('poblacion','-')})")
     print(f"Menor población: {menor.get('nombre','-')} ({menor.get('poblacion','-')})")
     print(f"Promedio de población: {promedio_poblacion(paises):.2f}")
     print(f"Promedio de superficie: {promedio_superficie(paises):.2f}")
-    
+
     conteo = cantidad_por_continente(paises)
-    
     print("Cantidad por continente:")
-    
     for cont, cant in conteo.items():
         print(f"  - {cont}: {cant}")
     pausar()

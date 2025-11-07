@@ -64,14 +64,14 @@ TPI_Gestion_Paises/
 ## 🧠 Funcionalidades Principales
 
 OPCIÓN    DESCRIPCIÓN                                       
-1         Agregar un país                                   
-2         Actualizar datos (población/superficie)           
-3         Buscar país por nombre                            
-4         Filtrar países por continente o rango             
-5         Ordenar países por nombre, población o superficie 
-6         Mostrar estadísticas generales                    
-7         Guardar los cambios en el CSV                     
-8         Salir del programa     
+1     -    Agregar un país                                   
+2     -    Actualizar datos (población/superficie)           
+3     -    Buscar país por nombre                            
+4     -    Filtrar países por continente o rango             
+5     -    Ordenar países por nombre, población o superficie 
+6     -    Mostrar estadísticas generales                    
+7     -    Guardar los cambios en el CSV                     
+8     -    Salir del programa     
 
 
 

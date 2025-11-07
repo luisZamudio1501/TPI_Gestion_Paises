@@ -38,6 +38,8 @@ TPI_Gestion_Paises/
 ├── .gitattributes
 ├── .gitignore
 └── README.md
+└── TPI_Programacion_1_Bufe_Yalila_Zamudio_Luis_MARCO_TEORICO.pdf
+
 
 ```
 
@@ -98,9 +100,9 @@ OPCIÓN    DESCRIPCIÓN
 
 ## 🧾 Documentación Complementaria
 
-- Informe PDF - Marco teórico y conclusiones (SUBIR MARCO TEÓRICO)
+- Informe PDF - Marco teórico y conclusiones 
 
-- Carpeta de capturas 
+  https://drive.google.com/file/d/110FEbNdz7Kg24GEINF9NoiABRfp5WtqM/view?usp=sharing
 
 - Video de presentación (SUBIR ACÁ EL VIDEO)
 

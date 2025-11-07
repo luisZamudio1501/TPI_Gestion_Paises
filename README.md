@@ -154,3 +154,7 @@ Se muestran los resultados de promedio, país con mayor/menor población y canti
 
 ![Estadísticas](capturas/05_ejemplo_estadistica.png)
 
+ULTIMOS CAMBIOS
+
+
+

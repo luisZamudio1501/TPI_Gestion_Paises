@@ -96,6 +96,50 @@ OPCIÓN    DESCRIPCIÓN
 
 - Informe PDF - Marco teórico y conclusiones (SUBIR MARCO TEÓRICO)
 
-- Carpeta de capturas (SUBIR DIRECCIÓN DE LA CARPETA)
+- Carpeta de capturas 
+---
+
+# 📸 Capturas de ejecución
+
+A continuación se presentan algunas capturas del funcionamiento del programa en consola:
+
+### 🧭 Menú principal
+Muestra las opciones del sistema al iniciar el programa.
+
+![Menú principal](capturas/00_ejemplo_menu.png)
+
+---
+
+### 🟩 Agregar país
+Ejemplo del proceso de carga de un nuevo país y guardado automático en el archivo CSV.
+
+![Agregar país](capturas/01_ejemplo_agregar.png)
+
+---
+
+### 🔍 Actualizar países
+Visualización de una actualización.
+
+![Actualizar países](capturas/02_ejemplo_actualizar.png)
+
+---
+
+### 🌎 Filtros
+Ejemplo de filtrado por continente.
+
+![Filtrado y ordenamiento](capturas/03_ejemplo_filtrar.png)
+
+### 🌎 Ordenamiento
+Ejemplo de filtrado por continente y ordenamiento por población.
+
+![Filtrado y ordenamiento](capturas/04_ejemplo_ordenar.png)
+
+---
+
+### 📊 Estadísticas
+Se muestran los resultados de promedio, país con mayor/menor población y cantidad por continente.
+
+![Estadísticas](capturas/05_ejemplo_estadistica.png)
+
 
 - Video de presentación (SUBIR ACÁ EL VIDEO)

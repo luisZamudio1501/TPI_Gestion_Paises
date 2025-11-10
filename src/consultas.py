@@ -60,12 +60,16 @@ def filtrar_por_rango_superficie(paises, minimo=0, maximo=None):
 # ORDENAMIENTO
 
 # Esta función ordena la lista de países por un campo específico (nombre, poblacion o superficie)
-# 
+# Sin lambda y sin try/except
 def ordenar_paises(paises, por="nombre", descendente=False):
     
     if por not in ("nombre", "poblacion", "superficie"):
         print("ERROR: campo de ordenamiento inválido")
         return paises
 
-    lista_ordenada = sorted(paises, key=lambda p: p[por], reverse=descendente)
+    # Función clave explícita (no lambda)
+    def clave(p):
+        return p[por]
+
+    lista_ordenada = sorted(paises, key=clave, reverse=descendente)
     return lista_ordenada

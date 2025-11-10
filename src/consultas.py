@@ -35,7 +35,7 @@ def filtrar_por_continente(paises, continente):
             resultados.append(p)
     return resultados
 
-# Devuelve países con población entre mínimo y máximo ingresado
+# Esta función devuelve países con población entre mínimo y máximo ingresado
 def filtrar_por_rango_poblacion(paises, minimo=0, maximo=None):
     resultados = []
     for p in paises:
@@ -46,7 +46,7 @@ def filtrar_por_rango_poblacion(paises, minimo=0, maximo=None):
             resultados.append(p)
     return resultados
 
-# Devuelve países con superficie entre mínimo y máximo ingresado
+# Esta función devuelve países con superficie entre mínimo y máximo ingresado
 def filtrar_por_rango_superficie(paises, minimo=0, maximo=None):
     resultados = []
     for p in paises:
@@ -59,17 +59,25 @@ def filtrar_por_rango_superficie(paises, minimo=0, maximo=None):
 
 # ORDENAMIENTO
 
-# Esta función ordena la lista de países por un campo específico (nombre, poblacion o superficie)
-# Sin lambda y sin try/except
-def ordenar_paises(paises, por="nombre", descendente=False):
-    
-    if por not in ("nombre", "poblacion", "superficie"):
+def ordenar_paises(paises, campo_orden="nombre", descendente=False):
+    # Bloque validar campo
+    if campo_orden not in ("nombre", "poblacion", "superficie"):
         print("ERROR: campo de ordenamiento inválido")
         return paises
 
-    # Función clave explícita (no lambda)
-    def clave(p):
-        return p[por]
+    # Se Crea una lista nueva con los países ordenados según el campo elegido
+    lista_ordenada = []
+    for p in paises:
+        lista_ordenada.append(p)
 
-    lista_ordenada = sorted(paises, key=clave, reverse=descendente)
+    # Ordenamiento manual burbuja
+    n = len(lista_ordenada)
+    for i in range(n - 1):
+        for j in range(0, n - i - 1):
+            a = lista_ordenada[j][campo_orden]
+            b = lista_ordenada[j + 1][campo_orden]
+            if (not descendente and a > b) or (descendente and a < b):
+                lista_ordenada[j], lista_ordenada[j + 1] = lista_ordenada[j + 1], lista_ordenada[j]
+
     return lista_ordenada
+

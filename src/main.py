@@ -198,7 +198,7 @@ def opcion_ordenar_paises(paises):
         pausar()
         return
 
-    ordenados = ordenar_paises(paises, por=campo, descendente=desc)
+    ordenados = ordenar_paises(paises, campo_orden=campo, descendente=desc)
     for r in ordenados:
         print(f"- {r['nombre']} | pob:{r['poblacion']} | sup:{r['superficie']} | {r['continente']}")
     pausar()
